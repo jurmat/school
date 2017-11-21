@@ -1,0 +1,325 @@
+.row{
+	margin: 0 -10px;
+	[class*='col-']{
+		padding: 0 10px;
+	}
+}
+.wrapper{
+  position:relative;
+  max-width:1280px;
+  margin:0 auto;
+//  z-index:2;
+  padding: 0 10px;
+}
+.col-m-3x{
+	@include breakpoint(mobileonly){
+  float:left;
+  width:33.3%;
+  }
+}
+.col-m-2x{
+	@include breakpoint(mobileonly){
+  float:left;
+  width:50%;
+  }
+}
+.col-f-2x{
+    @include breakpoint(phablet){
+  float:left;
+  width:50%;
+  }
+}
+.col-f-3x{
+	  @include breakpoint(phablet){
+  float:left;
+  width:33.3%;
+  }
+}
+.col-f-4x{
+	  @include breakpoint(phablet){
+  float:left;
+  width:25%;
+  }
+}
+.col-f-3x{
+	  @include breakpoint(phablet){
+  float:left;
+  width:33.3%;
+  }
+}
+.col-t-3x{
+  @include breakpoint(tablet){
+  float:left;
+  width:33.3%;
+  }
+}
+.col-t-4x{
+  @include breakpoint(tablet){
+  float:left;
+  width:25%;
+  }
+}
+.col-l-4x{
+  @include breakpoint(laptop){
+  float:left;
+  width:25%;
+  }
+}
+.col-l-5x{
+  @include breakpoint(laptop){
+  float:left;
+  width:20%;
+  }
+}
+.col-l-6x{
+  @include breakpoint(laptop){
+  float:left;
+  width:15%;
+  }
+}
+.col-l-2x{
+  @include breakpoint(laptop){
+  float:left;
+  width:50%;
+  }
+}
+.col-l-2x-r{
+  @include breakpoint(laptop){
+  float:right;
+  width:50%;
+  }
+}
+.col-l-3-4{
+	@include breakpoint(laptop){
+	float:left;
+	width:75%;
+  }
+}
+.col-l-3x{
+	@include breakpoint(laptop){
+	float:left;
+	width: 33.3%;
+  }
+}
+.col-l-7-1{
+  @include breakpoint(laptop){
+  float:left;
+  width: 85%;
+  }
+}
+.col-l-list{
+  @include breakpoint(laptop){
+  float:left;
+  width: 17.5%;
+  }
+}
+.col-m-4-5{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:80%;
+  }
+}
+.col-m-3-4{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:75%;
+  }
+}
+.col-m-3x{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:33.3%;
+  }
+}
+.col-m-2x{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:50%;
+  }
+}
+.col-m-4x{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:25%;
+  }
+}
+.col-m-5x{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:20%;
+  }
+}
+.col-m-2-3{
+  @include breakpoint(mobileonly){
+    float:left;
+    width:66.6%;
+  }
+}
+.col-f-2x{
+  @include breakpoint(phablet){
+    float:left;
+    width:50%;
+  }
+}
+.col-f-3x{
+  @include breakpoint(phablet){
+    float:left;
+    width:33.3%;
+  }
+}
+.col-f-4x{
+  @include breakpoint(phablet){
+    float:left;
+    width:25%;
+  }
+}
+.col-f-5x{
+  @include breakpoint(phablet){
+    float:left;
+    width:20%;
+  }
+}
+.col-t-3-4{
+  @include breakpoint(tablet){
+    float:left;
+    width:75%;
+  }
+}
+.col-t-4-5{
+  @include breakpoint(tablet){
+    float:left;
+    width:80%;
+  }
+}
+.col-t-2-3{
+  @include breakpoint(tablet){
+    float:left;
+    width:66.6%;
+  }
+}
+.col-t-2x{
+  @include breakpoint(tablet){
+    float:left;
+    width:50%;
+  }
+}
+.col-t-3x{
+  @include breakpoint(tablet){
+    float:left;
+    width:33.3%;
+  }
+}
+.col-t-4x{
+  @include breakpoint(tablet){
+    float:left;
+    width:25%;
+  }
+}
+.col-t-5x{
+  @include breakpoint(tablet){
+    float:left;
+    width:20%;
+  }
+}
+.col-l-4-5{
+  @include breakpoint(laptop){
+    float:left;
+    width:80%;
+  }
+}
+.col-l-1{
+  @include breakpoint(laptop){
+    float:left;
+    width:100%;
+  }
+}
+.col-l-3-4{
+  @include breakpoint(laptop){
+    float:left;
+    width:75%;
+  }
+}
+.col-l-2-3{
+  @include breakpoint(laptop){
+    float:left;
+    width:66.6%;
+  }
+}
+.col-l-2x{
+  @include breakpoint(laptop){
+    float:left;
+    width:50%;
+  }
+}
+.col-l-3x{
+  @include breakpoint(laptop){
+    float:left;
+    width:33.3%;
+  }
+}
+.col-l-4x{
+  @include breakpoint(laptop){
+    float:left;
+    width:25%;
+  }
+}
+.col-l-5x{
+  @include breakpoint(laptop){
+    float:left;
+    width:20%;
+  }
+}
+.col-l-4x{
+  @include breakpoint(laptop){
+  float:left;
+  width:25%;
+  }
+}
+.col-l-5x{
+  @include breakpoint(laptop){
+  float:left;
+  width:20%;
+  }
+}
+.col-l-6x{
+  @include breakpoint(laptop){
+  float:left;
+  width:15%;
+  }
+}
+.col-l-2x{
+  @include breakpoint(laptop){
+  float:left;
+  width:50%;
+  }
+}
+.col-l-2x-r{
+  @include breakpoint(laptop){
+  float:right;
+  width:50%;
+  }
+}
+.col-l-3-4{
+  @include breakpoint(laptop){
+  float:left;
+  width:75%;
+  }
+}
+.col-l-3x{
+  @include breakpoint(laptop){
+  float:left;
+  width: 33.3%;
+  }
+}
+.col-l-list{
+  @include breakpoint(laptop){
+  float:left;
+  width: 17.5%;
+  }
+}
+.col-l-7-1{
+  @include breakpoint(laptop){
+  float:left;
+  width: 85%;
+  }
+}
