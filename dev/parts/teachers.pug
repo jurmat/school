@@ -1,0 +1,53 @@
+.teachers
+	
+	.teachers__search.clearfix
+		.wrapper
+			.search
+				i.fa.fa-search(aria-hidden="true")
+				input(type="text"  placeholder="Я ищу ...")
+				button.btn_search
+					|Найти
+			.select
+				p Сортировать по:
+				select#select
+					option Стаж преподавания 1
+					option Стаж преподавания 2
+					option Стаж преподавания 3
+					option Стаж преподавания 4
+					option Стаж преподавания 5
+					
+	.wrapper
+		
+
+		.teachers__title
+			span Наши преподаватели
+		
+		.teachers__items
+			-var n = 0
+			while n<5 
+				-n++
+				.teacherItem.clearfix
+					.teacherItem__foto
+						img(src="img/teacher_foto.png", alt="")
+					.teacherItem_body
+						.teacherItem__header
+							.teacherItem_name
+								span Алия Маметова
+								.rating
+									i.fa.fa-star(aria-hidden="true")
+									span 7.3
+							.teacherItem_experience
+								p 
+									|Стаж преподавания:
+									span 8 лет
+						.teacherItem__text
+							span Обо мне:
+							P Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.
+						.teacherItem__btns.clearfix
+							a(href="#") Подробнее
+							.btn_teacherItem
+								a(href="#") Расписание 
+									i.fa.fa-long-arrow-right(aria-hidden="true")
+
+		include ./paginations
+	

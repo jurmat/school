@@ -1,0 +1,141 @@
+.exercises {
+  margin-top: 80px; }
+  .exercises__title {
+    padding: 20px; }
+    .exercises__title span {
+      font-size: 26px;
+      font-weight: bold; }
+  .exercises__items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .exercises__items .exercises-item_left {
+      padding-left: 100px;
+      margin-bottom: 25px;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      position: relative; }
+      .exercises__items .exercises-item_left__foto {
+        float: left;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 191px;
+        width: 191px;
+        margin-left: -90px;
+        margin-right: 20px; }
+      .exercises__items .exercises-item_left__body {
+        background-color: #fff;
+        min-height: 191px;
+        padding: 15px 5px; }
+        .exercises__items .exercises-item_left__body .exercises-item__title {
+          margin-bottom: 60px; }
+          .exercises__items .exercises-item_left__body .exercises-item__title span {
+            font-size: 20px;
+            font-weight: bold; }
+        .exercises__items .exercises-item_left__body .exercises-item__level {
+          position: absolute;
+          bottom: 30px;
+          left: 220px; }
+          .exercises__items .exercises-item_left__body .exercises-item__level span.level {
+            font-size: 16px;
+            font-weight: bold;
+            color: #888b8d; }
+          .exercises__items .exercises-item_left__body .exercises-item__level span.taken {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px; }
+        .exercises__items .exercises-item_left__body .exercises-item__btn {
+          position: absolute;
+          bottom: 15px;
+          right: 25px; }
+    .exercises__items .exercises-item_right {
+      padding-left: 100px;
+      margin-bottom: 25px;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      position: relative; }
+      .exercises__items .exercises-item_right__foto {
+        float: left;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 191px;
+        width: 191px;
+        margin-left: -90px;
+        margin-right: 20px; }
+      .exercises__items .exercises-item_right__body {
+        background-color: #fff;
+        min-height: 191px;
+        padding: 15px 5px; }
+        .exercises__items .exercises-item_right__body .exercises-item__title {
+          margin-bottom: 20px; }
+          .exercises__items .exercises-item_right__body .exercises-item__title span {
+            font-size: 20px;
+            font-weight: bold; }
+        .exercises__items .exercises-item_right__body .exercises-item__points {
+          margin-bottom: 12px; }
+          .exercises__items .exercises-item_right__body .exercises-item__points span {
+            font-size: 16px;
+            font-weight: bold; }
+            .exercises__items .exercises-item_right__body .exercises-item__points span:nth-last-child(1) {
+              font-size: 14px; }
+          .exercises__items .exercises-item_right__body .exercises-item__points .fa {
+            color: #4ed87e;
+            font-size: 26px;
+            margin-left: 20px;
+            margin-right: 5px; }
+        .exercises__items .exercises-item_right__body .exercises-item__level {
+          position: absolute;
+          bottom: 30px;
+          left: 220px; }
+          .exercises__items .exercises-item_right__body .exercises-item__level span.level {
+            font-size: 16px;
+            font-weight: bold;
+            color: #888b8d; }
+          .exercises__items .exercises-item_right__body .exercises-item__level span.taken {
+            font-size: 16px;
+            font-weight: bold;
+            margin-left: 10px; }
+        .exercises__items .exercises-item_right__body .exercises-item__btn {
+          position: absolute;
+          bottom: 15px;
+          right: 25px; }
+
+.btn_blue a {
+  text-decoration: none;
+  padding: 10px 25px;
+  color: #fff;
+  background-color: #0580fb;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold; }
+
+.btn_white a {
+  text-decoration: none;
+  padding: 10px 25px;
+  color: #0580fb;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 2px solid #0580fb;
+  min-width: 150px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold; }

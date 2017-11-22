@@ -1,0 +1,171 @@
+
+.exercises{
+	margin-top: 80px;
+	&__title{
+			padding: 20px;
+		span{
+			font-size: 26px;
+			font-weight: bold;
+		}
+	}
+	&__items{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		.exercises-item_left{
+			padding-left: 100px;
+			margin-bottom: 25px;
+			flex-grow: 1;
+			position: relative;
+			&__foto{
+				float: left;
+				border-radius: 50%;
+				overflow: hidden;
+				height: 191px;
+				width: 191px;
+				margin-left: -90px;
+				margin-right: 20px;
+			}
+			&__body{
+				background-color: #fff;
+				min-height: 191px;
+				padding: 15px 5px;
+				.exercises-item__title{
+					margin-bottom: 60px;
+					span{
+						font-size: 20px;
+						font-weight:bold;
+					}
+				}
+				.exercises-item__level{
+					position: absolute;
+					bottom: 30px;
+					left: 220px;
+					span.level{
+						font-size: 16px;
+						font-weight: bold;
+						color: #888b8d;
+					}
+					span.taken{
+						font-size: 16px;
+						font-weight: bold;
+						margin-left: 10px;
+					}
+				}
+				.exercises-item__btn{
+					position: absolute;
+					bottom: 15px;
+					right: 25px;
+				}
+			}
+		}
+		.exercises-item_right{
+			padding-left: 100px;
+			margin-bottom: 25px;
+			flex-grow: 1;
+			position: relative;
+			&__foto{
+				float: left;
+				border-radius: 50%;
+				overflow: hidden;
+				height: 191px; 
+				width: 191px;
+				margin-left: -90px;
+				margin-right: 20px;
+			}
+			&__body{
+				background-color: #fff;
+				min-height: 191px;
+				padding: 15px 5px;
+				.exercises-item__title{
+					margin-bottom: 20px;
+					span{
+						font-size: 20px;
+						font-weight:bold;
+					}
+				}
+				.exercises-item__points{
+					margin-bottom: 12px;
+					span{
+						font-size: 16px;
+						font-weight: bold;
+						&:nth-last-child(1){
+							font-size: 14px;
+						}
+					}
+					.fa{
+						color: #4ed87e;
+						font-size: 26px;
+						margin-left: 20px;
+						margin-right: 5px;
+					}
+				}
+				.exercises-item__level{
+					position: absolute;
+					bottom: 30px;
+					left: 220px;
+					span.level{
+						font-size: 16px;
+						font-weight: bold;
+						color: #888b8d;
+					}
+					span.taken{
+						font-size: 16px;
+						font-weight: bold;
+						margin-left: 10px;
+					}
+				}
+				.exercises-item__btn{
+					position: absolute;
+					bottom: 15px;
+					right: 25px;
+				}
+			}
+		}
+	}
+}
+.btn_blue{
+
+	a{
+		text-decoration: none;
+		padding: 10px 25px;
+		color: #fff;
+		background-color: #0580fb;
+		border-radius: 30px;
+		min-width: 150px;
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+	}
+	
+}
+
+.btn_white{
+	
+	a{
+		text-decoration: none;
+		padding: 10px 25px;
+		color: #0580fb;
+//		background-color: #0580fb;
+		border-radius: 30px;
+		border: 2px solid #0580fb;
+		min-width: 150px;
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

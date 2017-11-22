@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>school</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.nice-select.js" type="text/javascript"></script>
+    <script src="js/src.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox"><span></span><span></span><span></span>
+            <ul id="menu"><a href="#">
+                <li>Лента </li></a><a class="active" href="#">
+                <li>Уроки </li></a><a href="#">
+                <li>Преподаватели</li></a><a href="#">
+                <li>Упражнения</li></a><a href="#">
+                <li>FQA</li></a></ul>
+          </div>
+        </nav>
+        <div class="header__logo"><a href="#"><img src="img/logo.png"></a></div>
+        <div class="header__menu">
+          <ul><a href="#">
+              <li>Лента </li></a><a class="active" href="#">
+              <li>Уроки </li></a><a href="#">
+              <li>Преподаватели</li></a><a href="#">
+              <li>Упражнения</li></a><a href="#">
+              <li>FQA</li></a></ul>
+        </div>
+        <div class="header__user">
+          <div class="users__name"><span>Салам, Ольга!	</span></div>
+          <div class="users__foto"><img src="img/user_foto.png"></div>
+          <div class="users__select"><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="teachers">
+      <div class="teachers__search clearfix">
+        <div class="wrapper">
+          <div class="search"><i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" placeholder="Я ищу ...">
+            <button class="btn_search">Найти</button>
+          </div>
+          <div class="select">
+            <p>Сортировать по:</p>
+            <select id="select">
+              <option>Стаж преподавания 1</option>
+              <option>Стаж преподавания 2</option>
+              <option>Стаж преподавания 3</option>
+              <option>Стаж преподавания 4</option>
+              <option>Стаж преподавания 5</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="teachers__title"><span>Наши преподаватели</span></div>
+        <div class="teachers__items">
+          <div class="teacherItem clearfix">
+            <div class="teacherItem__foto"><img src="img/teacher_foto.png" alt=""></div>
+            <div class="teacherItem_body">
+              <div class="teacherItem__header">
+                <div class="teacherItem_name"><span>Алия Маметова</span>
+                  <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><span>7.3</span></div>
+                </div>
+                <div class="teacherItem_experience">
+                  <p>
+                     Стаж преподавания:<span>8 лет</span></p>
+                </div>
+              </div>
+              <div class="teacherItem__text"><span>Обо мне:</span>
+                <P>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.</P>
+              </div>
+              <div class="teacherItem__btns clearfix"><a href="#">Подробнее</a>
+                <div class="btn_teacherItem"><a href="#">Расписание <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="teacherItem clearfix">
+            <div class="teacherItem__foto"><img src="img/teacher_foto.png" alt=""></div>
+            <div class="teacherItem_body">
+              <div class="teacherItem__header">
+                <div class="teacherItem_name"><span>Алия Маметова</span>
+                  <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><span>7.3</span></div>
+                </div>
+                <div class="teacherItem_experience">
+                  <p>
+                     Стаж преподавания:<span>8 лет</span></p>
+                </div>
+              </div>
+              <div class="teacherItem__text"><span>Обо мне:</span>
+                <P>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.</P>
+              </div>
+              <div class="teacherItem__btns clearfix"><a href="#">Подробнее</a>
+                <div class="btn_teacherItem"><a href="#">Расписание <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="teacherItem clearfix">
+            <div class="teacherItem__foto"><img src="img/teacher_foto.png" alt=""></div>
+            <div class="teacherItem_body">
+              <div class="teacherItem__header">
+                <div class="teacherItem_name"><span>Алия Маметова</span>
+                  <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><span>7.3</span></div>
+                </div>
+                <div class="teacherItem_experience">
+                  <p>
+                     Стаж преподавания:<span>8 лет</span></p>
+                </div>
+              </div>
+              <div class="teacherItem__text"><span>Обо мне:</span>
+                <P>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.</P>
+              </div>
+              <div class="teacherItem__btns clearfix"><a href="#">Подробнее</a>
+                <div class="btn_teacherItem"><a href="#">Расписание <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="teacherItem clearfix">
+            <div class="teacherItem__foto"><img src="img/teacher_foto.png" alt=""></div>
+            <div class="teacherItem_body">
+              <div class="teacherItem__header">
+                <div class="teacherItem_name"><span>Алия Маметова</span>
+                  <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><span>7.3</span></div>
+                </div>
+                <div class="teacherItem_experience">
+                  <p>
+                     Стаж преподавания:<span>8 лет</span></p>
+                </div>
+              </div>
+              <div class="teacherItem__text"><span>Обо мне:</span>
+                <P>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.</P>
+              </div>
+              <div class="teacherItem__btns clearfix"><a href="#">Подробнее</a>
+                <div class="btn_teacherItem"><a href="#">Расписание <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="teacherItem clearfix">
+            <div class="teacherItem__foto"><img src="img/teacher_foto.png" alt=""></div>
+            <div class="teacherItem_body">
+              <div class="teacherItem__header">
+                <div class="teacherItem_name"><span>Алия Маметова</span>
+                  <div class="rating"><i class="fa fa-star" aria-hidden="true"></i><span>7.3</span></div>
+                </div>
+                <div class="teacherItem_experience">
+                  <p>
+                     Стаж преподавания:<span>8 лет</span></p>
+                </div>
+              </div>
+              <div class="teacherItem__text"><span>Обо мне:</span>
+                <P>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текствп генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст чисто.</P>
+              </div>
+              <div class="teacherItem__btns clearfix"><a href="#">Подробнее</a>
+                <div class="btn_teacherItem"><a href="#">Расписание <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="paginations"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">...</a><a href="#">12</a><a href="#"><i class="fa active fa-chevron-right" aria-hidden="true"></i></a></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="footer__logo"><a href="#"><img src="img/logo.png"></a></div>
+        <div class="footer__menu">
+          <ul><a href="#">
+              <li>О проекте </li></a><a href="#">
+              <li>Контакты</li></a><a href="#">
+              <li>Пользовательское соглашение</li></a></ul>
+        </div>
+        <div class="footer__contacts">
+          <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i><span><a href="tel:+38(777) 212-38-23">8(777) 212-38-23</a></span></div>
+          <div class="email"><i class="fa fa-envelope" aria-hidden="true"></i><span>supprt@glang.kz</span></div>
+        </div>
+        <div class="footer__social">
+          <p>Мы в социальных сетях:</p><a href="#">
+            <div class="social__icon"><span>g+</span></div></a><a href="#">
+            <div class="social__icon"><i class="fa fa-twitter" aria-hidden="true"></i></div></a><a href="#">
+            <div class="social__icon"><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+        </div>
+        <div class="footer__copy">
+          <p>© 2017 / Все права защищены</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

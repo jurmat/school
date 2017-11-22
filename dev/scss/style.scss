@@ -1,6 +1,7 @@
 @import "_mixins";
 @import '_grid';
 @import '_reset';
+@import 'exercises';
 @mixin clearfix() {
   &::after {
     display: block;
@@ -15,6 +16,8 @@ body{
 	background-image: url(../img/font.jpg);
 	font-family: 'Open Sans', sans-serif;
 }
+////////////////////////////////////////////  HEADER   //////////////////////////////////
+
 .header{
 	position: fixed;
 	top: 0;
@@ -120,6 +123,109 @@ body{
 		}
 	}
 }
+#menuToggle{
+	display: none;
+	position: absolute;
+	top: 16px;
+    left: 21px;
+	z-index: 15;
+
+	-webkit-user-select: none;
+	user-select: none;
+	
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #fff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgb(241, 241, 241);
+}
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+	width: 260px;
+	position: absolute;
+	margin: -40px 0 0 -50px;
+	padding: 50px;
+	background: #262f3f;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	
+	a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		margin-left: 25px;
+		padding:2px 8px;
+		display: block;
+		margin-bottom: 10px;
+		}
+	a.active{
+		background-color: #e8e8e8;
+		border-radius: 3px;
+		color: #262f3f;
+	}
+	a:hover{
+		background-color: #e8e8e8;
+		border-radius: 3px;
+		color: #262f3f;
+	}
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+////////////////////////////////////////////  HEADER AND   //////////////////////////////////
+
+
+
 .lesson{
 	margin-top: 120px;
 }
@@ -464,107 +570,260 @@ body{
 		font-weight: bold;
 	}
 }
+////////////////////////////////////////////  LESSONS  AND //////////////////////////////////
 
+////////////////////////////////////////////  TEACHER //////////////////////////////////
 
-#menuToggle{
-	display: none;
-	position: absolute;
-	top: 16px;
-    left: 21px;
-	z-index: 15;
+.teachers{
+	margin-top: 80px;	
+	&__search{
+		background-color: #fff;
+		padding: 30px;
+		.search{
+			
+			float: left;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			width: 50%;
+			input{
+				height: 32px;
+				width: 60%;
+				border:1px solid #efeeee;
+				padding: 0 10px;
+			}
+			.fa{
+				background-color: #efeeee;
+				padding: 8px 8px 0 13px;
+		
+				border-radius:  20px 0 0 20px ;
+			}
+			.btn_search{
+				display: inline-block;
+				background-color: #fb0;
+				border-radius: 0 20px 20px 0;
+				padding: 5px 15px;
+				outline: none;
+				color: #fff;
+				border: none;
+				cursor: pointer;
+			}
+		}
+		.nice-select{
+			-webkit-tap-highlight-color: transparent;
+			background-color: #fff;
+			border-radius: 20px;
+			border: solid 1px #e8e8e8;
+			box-sizing: border-box;
+			clear: both;
+			cursor: pointer;
+			display: block;
+			float: left;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: normal;
+			height: 32px;
+			line-height: 31px;
+			outline: none;
+			padding-left: 10px;
+			padding-right: 30px;
+			position: relative;
+			text-align: left !important;
+			-webkit-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			white-space: nowrap;
+			width: auto;
+			text-overflow: ellipsis;
+			min-width: 180px;
+			&:after{
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				display: block;
+				width: 0;
+				height: 0;
+				margin-top: -3px;
+				border-color: #fff transparent transparent transparent;
+				border-style: solid;
+				border-width: 8px 8px 0 8px;
+				content: ' ';
+				transform: rotate(0deg);
+				transform-origin:50% 50%;
+				
+			}
+			&:before{
+				content: '';
+				display: block;
+				background-color: #fb0;
+				height: 30px;
+				width: 40px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				border-radius: 0 20px 20px 0;
+			}
+			span{
+				margin-right: 15px;
+				font-weight: normal;
+			}
+			.list{
+//				min-width: 230px;
+				right: 0;
+				left: auto;
+			}
+		}
+		.nice-select.open:after{
+			transform: rotate(-180deg);
+		}
+			
+		.select{
+			float: right;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			p{
+				font-weight: bold;
+				margin-right: 15px;
+			}
+			
+			span{
+				font-weight: normal;
+				margin-right: 15px;
+			}
+		}
+	}
+	&__title{
+		padding: 20px;
+		span{
+			font-weight: bold;
+			font-size: 26px;
+		}
+	}
+	&__items{
+		padding-left: 100px;
+		
+		.teacherItem{
+			background-color: #fff;
+			position: relative;
+			min-height: 240px;
+			margin-bottom: 50px;
+			
+			&__foto{
+				border-radius: 50%;
+				overflow: hidden;
+				width: 240px;
+				height: 240px;
+				float: left;
+				margin-left: -120px;
+				position: absolute;
+			}
+			&_body{
+				padding: 10px 20px 75px 180px;
+				.teacherItem__header{
+				width: 100%;
+					.teacherItem_name{
+						display: inline-block;
+						
+						span{
+							font-weight: bold;
+							font-size: 19px;
+						}
+						.rating{
+							display: inline-block;
+							.fa{
+								color: #ffbb00;
+								margin: 0 10px;
+							}
+						}
+					}
+					.teacherItem_experience{
+						display: inline-block;
+						margin-left: 40px;
+						p{
+							font-size: 16px;
+							color: #888b8d;
+							span{
+								font-weight: bold;
+								color: #000;
+								margin-left: 10px;
+							}
+						}
+					}
+				
+				}
+				.teacherItem__text{
 
-	-webkit-user-select: none;
-	user-select: none;
-	
+					text-overflow:ellipsis;
+					overflow: hidden;
+					width: 100%;
+					span{
+						font-size: 15px;
+						font-weight: bold;
+					}	
+				}
+				.teacherItem__btns{
+					position: absolute;
+					bottom: 25px;
+					right: 15px;
+					width: 100%;
+					padding-left: 200px;
+					a{
+						color: #0580fb;
+						font-size: 14px;
+						font-weight: bold;
+					}
+					.btn_teacherItem{
+						float: right;
+						
+						a{
+							text-decoration: none;
+							padding: 10px 25px;
+							color: #fff;
+							background-color: #0580fb;
+							border-radius: 30px;
+						}
+					}
+				}
+			}	
+		}
+	}
 }
-
-#menuToggle input{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-#menuToggle span{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #fff;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-#menuToggle span:first-child{
-  transform-origin: 0% 0%;
-}
-#menuToggle span:nth-last-child(2){
-  transform-origin: 0% 100%;
-}
-#menuToggle input:checked ~ span{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: rgb(241, 241, 241);
-}
-#menuToggle input:checked ~ span:nth-last-child(3){
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-#menuToggle input:checked ~ span:nth-last-child(2){
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu{
-	width: 260px;
-	position: absolute;
-	margin: -40px 0 0 -50px;
-	padding: 50px;
-	background: #262f3f;
-	list-style-type: none;
-	-webkit-font-smoothing: antialiased;
-	transform-origin: 0% 0%;
-	transform: translate(-100%, 0);
-	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-	
+////////////////////////////////////////////  TEACHER AND  //////////////////////////////////
+.paginations{
+	text-align: center;
 	a{
 		text-decoration: none;
-		color: #fff;
-		font-size: 16px;
+		color: black;
+		margin-left: 11px;
+		padding: 0 8px;
+		
+		
+		font-size: 19px;
 		font-weight: bold;
-		font-family: 'Open Sans', sans-serif;
-		margin-left: 25px;
-		padding:2px 8px;
-		display: block;
-		margin-bottom: 10px;
-		}
+	}
 	a.active{
-		background-color: #e8e8e8;
-		border-radius: 3px;
-		color: #262f3f;
+		border: 2px solid #0580fb;
+		border-radius: 7px;
 	}
-	a:hover{
-		background-color: #e8e8e8;
-		border-radius: 3px;
-		color: #262f3f;
-	}
-}
+	.fa{
+		color: #929191;
 
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+		
+	}
+	.fa.active{
+		color: #0580fb;
+	}
 }
+////////////////////////////////////////////  FOOTER //////////////////////////////////
 
 .footer{
 	background-color: #000e1c;
@@ -593,6 +852,10 @@ body{
 				color: #fff;
 				font-family: 'Open Sans', sans-serif;
 				font-size: 15px;
+				li{
+					margin-bottom: 7px;
+				}
+				
 			}
 		}
 	}
@@ -608,13 +871,18 @@ body{
 			display: inline-block;
 			margin-right: 41px;
 			span{
-				font-size: 18px;
+				
+				a{
+					text-decoration: none;
+					font-size: 18px;
 				color: #fff;
 				font-family: 'Open Sans', sans-serif;
+				}
 			}
 		}
 		.email{
 			display: inline-block;
+			
 			span{
 				font-size: 18px;
 				color: #fff;
@@ -631,6 +899,11 @@ body{
 			font-family: 'Open Sans', sans-serif;
 			font-size: 15px;
 			margin-bottom: 10px;
+		}
+		span{
+			position: relative;
+			top: -5px;
+			left: 2px;
 		}
 		a{
 			border: 1px solid #fff;
@@ -655,7 +928,7 @@ body{
 	}
 }
 
-
+////////////////////////////////////////////  FOOTER AND  //////////////////////////////////
 @media (max-width: 420px){
 	.header{
 		#menuToggle{
@@ -682,9 +955,134 @@ body{
 		}
 	}
 }
-
+@media (max-width: 475px){
+	.exercises__items .exercises-item_left__body{
+		padding-top: 120px;
+		text-align: center;
+	}
+	.exercises__items .exercises-item_right__body{
+		text-align: center;
+		padding-top: 120px;
+	}
+	.exercises__items .exercises-item_left{
+		padding-left: 0;
+		margin-top: 100px;
+	}
+	.exercises__items .exercises-item_right{
+		padding-left: 0;
+		margin-top: 100px;
+	}
+	
+	.exercises__items .exercises-item_left__foto{
+		position: absolute;
+		top: -80px;
+		left: 50%;
+	}
+	.exercises__items .exercises-item_right__foto{
+		position: absolute;
+		top: -80px;
+		left: 50%;
+	}
+	
+	.exercises__items .exercises-item_left__body .exercises-item__btn {
+		left: 220px;
+		position: static;
+		margin-top: 20px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__level{
+		bottom: 65px;
+		position: static;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__btn{
+		left: 220px;
+		position: static;
+		margin-top: 20px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__level{
+		bottom: 65px;
+		position: static;
+	}
+	.paginations a{
+		margin-left: 0;
+	}
+}
 
 @include breakpoint(mobileonly){
+	.exercises__items .exercises-item_right__body .exercises-item__title{
+		margin-bottom: 5px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__btn {
+		left: 220px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__level{
+		bottom: 65px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__btn{
+		left: 220px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__level{
+		bottom: 65px;
+	}
+	.exercises{
+		margin-top: 60px;
+	}
+	.teachers{
+		margin-top: 60px;
+		&__search{
+			.search{
+				margin-bottom: 25px;
+				float: none;
+				width: 100%;
+				input{
+					width: 100%;
+				}
+			}
+			.select{
+				float: none;
+				justify-content: center;
+				span{
+					font-size: 12px;
+				}
+			}
+		}
+		.teachers__items{
+			padding-left: 0;
+			text-align: center;
+			
+			.teacherItem{
+				margin-top: 140px;
+				&__foto{
+					top: -120px;
+					left: 50%;
+				}
+				&_body{
+					padding: 135px 20px 40px 20px;
+						.teacherItem__header{
+						.teacherItem_name{
+							display: block;
+							border: none;
+							padding-right: 0;
+							.rating{
+								display: block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+					.teacherItem__btns{
+						padding-left: 0;
+						position: static;
+						margin-top: 20px;
+						.btn_teacherItem{
+							float: none;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
 	#menuToggle{
 		display: block;
 	}
@@ -721,6 +1119,7 @@ body{
 			.phone{
 				margin: 0;
 				display: block;
+				
 			}
 		}
 		&__social{
@@ -738,6 +1137,61 @@ body{
 	}
 }
 @include breakpoint(phablet){
+	
+	.teachers{
+		&__search{
+			.search{
+				margin-bottom: 25px;
+				float: none;
+				width: 100%;
+				input{
+					width: 100%;
+				}
+			}
+			.select{
+				float: none;
+				justify-content: center;
+			}
+		}
+		.teachers__items{
+			padding-left: 0;
+			text-align: center;
+			
+			.teacherItem{
+				margin-top: 140px;
+				&__foto{
+					top: -120px;
+					left: 50%;
+				}
+				&_body{
+					padding: 135px 20px 40px 20px;
+					.teacherItem__header{
+						.teacherItem_name{
+							display: block;
+							border: none;
+							padding-right: 0;
+							.rating{
+								display: block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+					.teacherItem__btns{
+						padding-left: 0;
+						position: static;
+						margin-top: 20px;
+						.btn_teacherItem{
+							float: none;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+		
+	}
 	#menuToggle{
 		display: block;
 	}
@@ -793,6 +1247,58 @@ body{
 	}
 }
 @include breakpoint(tablet){
+	.teachers{
+		&__search{
+			.search{
+				margin-bottom: 0px;
+				float: left;
+				width: 50%;
+				input{
+					width: 60%;
+				}
+			}
+			.select{
+				float: right;
+				justify-content: center;
+			}
+		}
+		.teachers__items{
+			padding-left: 100px;
+			text-align: left;
+			
+			.teacherItem{
+				margin-top: 0px;
+				&__foto{
+					top: 0px;
+					left: 0;
+				}
+				&_body{
+					padding: 10px 20px 75px 180px;
+						.teacherItem__header{
+						.teacherItem_name{
+							display: inline-block;
+							padding-right: 20px;
+							border-right: 1px solid #c6c5c5;
+							.rating{
+								display: inline-block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+				}
+				.teacherItem__btns{
+						padding-left: 195px;
+						position: absolute;
+						.btn_teacherItem{
+							float: right;
+							margin-top: 0px;
+						}
+					}
+			}
+		}
+	}
 	#menuToggle{
 		display: none;
 	}
@@ -804,11 +1310,11 @@ body{
 			
 		}
 		&__logo{
-				margin-left:0px;
-				&:before{
-					display: none;
-				}
+			margin-left:0px;
+			&:before{
+				display: none;
 			}
+		}
 	}
 	.users__foto{
 		display: none;
@@ -847,6 +1353,7 @@ body{
 			width: 100%;
 		}
 	}
+	
 }
 
 @include breakpoint(laptop){
@@ -886,6 +1393,7 @@ body{
 			.phone{
 				margin: 0;
 				display: block;
+				margin-right: 40px;
 			}
 		}
 		&__social{
@@ -920,6 +1428,7 @@ body{
 			.phone{
 				margin: 0;
 				display: inline-block;
+				margin-right: 40px;
 			}
 		}
 		&__social{
@@ -937,5 +1446,22 @@ body{
 	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

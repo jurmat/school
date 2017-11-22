@@ -1,0 +1,60 @@
+.exercises
+	.teachers__search.clearfix
+		.wrapper
+			.search
+				i.fa.fa-search(aria-hidden="true")
+				input(type="text"  placeholder="Я ищу ...")
+				.btn_search
+					|Найти
+			.select
+				p Сортировать по:
+				select#select
+					option Начальный 1
+					option Начальный 2
+					option Начальный 3
+					option Начальный 4
+					option Начальный 5
+	.wrapper
+		.exercises__title
+			audio(src="")
+			span Упражнения для изучения
+		.row
+			.exercises__items.clearfix
+				-var n = 0
+				while n<4
+					-n++
+					.exercises-item_left
+						.exercises-item_left__foto
+							img(src="img/exercises_img.png", alt="")
+						.exercises-item_left__body
+							.exercises-item__title
+								span Жануарлар / Жуан жане жинишке дыбыстар
+							.exercises-item__level
+								span.level Уровень:
+
+								span.taken Трудный
+							.exercises-item__btn
+								.btn_blue
+									a(href="#") пройти 
+										i.fa.fa-long-arrow-right(aria-hidden="true")
+
+
+
+					.exercises-item_right
+						.exercises-item_right__foto
+							img(src="img/exercises_img.png", alt="")
+						.exercises-item_right__body
+							.exercises-item__title
+								span Жануарлар / Жуан жане жинишке дыбыстар
+							.exercises-item__points
+								span 40 / 60 баллов
+								i.fa.fa-check-square(aria-hidden="true")
+								span Пройдено
+							.exercises-item__level
+								span.level Уровень:
+								span.taken Трудный
+							.exercises-item__btn
+								.btn_white
+									a(href="#") Пройти еще раз 
+										i.fa.fa-long-arrow-right(aria-hidden="true")
+		include ./paginations
