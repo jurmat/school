@@ -1444,24 +1444,319 @@ body{
 			width: auto;
 		}
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.payment-info{
+	margin-top: 120px;
+	.payment-title{
+		float: left;
+	    font-size: 26px;
+	    font-weight: bold;
+	    margin-bottom: 25px;
+		@media (max-width: 54em){
+			margin-bottom: 15px;
+			float: none;
+			text-align: center;
+		}
+	}
+	.payment-lesson{
+		font-weight: bold;
+		float: right;
+		font-size: 6px;
+		@media (max-width: 54em){
+			margin-bottom: 15px;
+			float: none;
+			text-align: center;
+		}
+		span{
+			margin-right: 20px;
+			font-size: 16px;
+			display: inline-block;
+		}
+		.lesson-score{
+			color: #9b9393;
+			width: 60px;
+			font-size: 16px;
+			background: #fff;
+			padding: 10px;
+			display: inline-block;
+			height: 40px;
+			text-align: center;
+		}
+	}
+}
+.payment{
+	padding:35px 70px;
+	background: #fff;
+	width: 100%;
+	@media (max-width: 54em){
+		padding:35px 20px;
+	}
+	&__text{
+		margin-left: 50px;
+		font-size: 15px;
+		margin-bottom: 65px;
+		&:before {
+			background-image: url(../img/payment-text-icon.png);
+			content: '';
+			margin-left: -50px;
+    position: absolute;
+			display: inline-block;
+			width: 37px;
+			height: 37px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
+	&__info{
+		font-size: 20px;
+		color: #939595;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	&__cost{
+		text-align: center;
+		margin-bottom: 90px;
+		.cost{
+			margin-bottom: 35px;
+			.cost-display{
+				@media (max-width: 54em){
+					display: block;
+				}
+			}
+			&__title{
+				font-size: 24px;
+				display: inline-block;
+				font-weight: bold;
+				padding: 0 30px;
+				@media (max-width: 54em){
+					margin-bottom: 30px;
+				}
+				@media (max-width: 37.5em){
+					padding: 0;
+					font-size: 21px;
+				}
+				span{
+					font-weight: 300;
+				}
+			}
+		}
+	}
+	&__method{
+		text-align: center;
+		.method-title{
+			font-size: 26px;
+			font-weight: bold;
+			margin-bottom: 35px;
+		}
+		.method{
+			    margin-bottom: 20px;
+			padding: 35px;
+			min-height: 250px;
+			border: 1px solid #f2f2f2;
+			&:hover{
+				border: 1px solid #b2dafb
+			}
+			&__title{
+				font-size: 18px;
+				font-weight: lighter;
+				margin-bottom: 55px;
+				span{
+					display: block;
+					font-size: 14px;
+					font-weight: lighter;
+				}
+			}
+			&__icon1{
+				margin-bottom: 45px;
+				width: 203px;
+				height: 48px;
+				margin: 0 auto;
+				background-image: url(../img/method-icon.png);
+			}
+			&__icon2{
+				margin-bottom: 45px;
+				width: 151px;
+				height: 62px;
+				margin: 0 auto;
+				background-image: url(../img/method-icon2.png);
+			}
+			&__icon3{
+				margin-bottom: 45px;
+				width: 106px;
+				height: 62px;
+				margin: 0 auto;
+				background-image: url(../img/method-icon3.png);
+			}
+		}
+	}
+	&__counter{
+		text-align: center;
+		margin-bottom: 25px;
+		span{
+			font-size: 20px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-bottom: 10px;
+		}
+		.counter{
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 15px;
+			.plus{
+				text-align: center;
+				width: 40px;
+				padding-top: 9px;
+				padding-bottom:9px;
+				background:#e8e8e8;
+				margin-right:-4px;
+				display: inline-block;
+				vertical-align: middle;
+				border: 1px solid #e8e8e8;
+			}
+			.min{
+				text-align: center;
+				width: 40px;
+				padding-top: 9px;
+				padding-bottom:9px;
+				background:#e8e8e8;
+				margin-right:-5px;
+				vertical-align: middle;
+				display: inline-block;
+				border: 1px solid #e8e8e8;
+			}
+			.res{
+				font-size:18px;
+				padding-top: 8px;
+				vertical-align: middle;
+				padding-bottom:8px;
+				text-align: center;
+				width: 40px;
+				border: 1px solid #e8e8e8;
+				background:#fbfbfb;
+				margin-right:-4px;
+				display: inline-block;
+			}
+		}
+	}
+	&__defrayal{
+		    min-height: 360px;
+		box-shadow: 0.3em 0.4em 5px rgba(233, 230, 230, 0.5);
+		margin-bottom: 80px;
+		text-align: center;
+		border: 1px solid #e8e8e8;
+		@media (max-width: 54em){
+			margin-bottom: 40px;
+		}
+		.defrayal-title{
+			padding: 30px 0;
+			width: 100%;
+			background: #38a0f4;
+			color: #fff;
+			font-size: 26px;
+			margin-bottom: 30px;
+		}
+		.defrayal-text{
+			min-height: 139px;
+			font-size: 36px;
+			span{
+				font-size: 18px;
+				display: block;
+				margin-bottom: 30px;
+			}
+			.defrayal-sale{
+				font-size: 26px;
+				color: #ffbb00;
+				margin-bottom: 30px;
+			}
+		}
+		.btn_white{
+			margin-bottom: 15px;
+			span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.btn_orange{
+	
+	a{
+		text-decoration: none;
+		padding: 10px 25px;
+		color: #fff;
+		background-color: #ffbb00;
+		border-radius: 30px;
+		min-width: 150px;
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+	}
+	span{
+				display: inline-block;
+				vertical-align: middle;
+			}
+}
+.icon-card{
+	display: inline-block;
+	background-image: url(../img/card-icon-blue.png);
+	width: 24px;
+	vertical-align: middle;
+    height: 26px;
+    margin-right: 10px;
+}
+.icon-card2{
+	display: inline-block;
+	background-image: url(../img/card-icon-white.png);
+	width: 24px;
+	vertical-align: middle;
+    height: 26px;
+    margin-right: 10px;
+}
+@media (max-width: 64em){
+	.col-f-center{
+		width: 50%;
+		float: none;
+		margin-left: 25%
+	}
+}
+@media (max-width: 37.5em){
+	.col-f-center{
+		width: 100%;
+		float: none;
+		margin-left: 0%
+	}
+}
+@media (max-width: 54em){
+	.col-t-center{
+		width: 50%;
+		float: none;
+		margin-left: 25%
+	}
+}
+@media (max-width: 37.5em){
+	.col-t-center{
+		width: 100%;
+		float: none;
+		margin-left: 0%
+	}
+}
+@media (max-width: 64em){
+	.clear-fab{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+}
+@media (max-width: 54em){
+	.clear-tab{
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+}
