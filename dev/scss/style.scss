@@ -1761,3 +1761,440 @@ body{
   }
 }
 }
+@include breakpoint(mobileonly){
+	.profile__container .profile_page .page_massege {
+		padding: 0 10px;
+	}
+	.profile__container .profile_page .page_password input[type=text]{
+		min-width: 282px;
+		width: 100%;
+	}
+	.profile__container .profile_page .page_password .page_password_title{
+		max-width: 100%;
+		margin-top: 30px;
+	}
+	.profile__container .profile_page .page_setting .profile__avatar{
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		min-width: 290px;margin-top: 30px;
+	}
+	
+	.profile__container .profile_page .page_setting .profile__form .form-date{
+		width: 100%;
+	}
+	
+	.profile__container .profile_page .page_setting .profile__form .form-contact{
+		width: 100%;	
+	}
+	
+	.profile__container .profile_page .page_setting .profile__form .form-name{
+		width: 100%;	
+	}
+	
+
+	.profile__container .profile_page .page_setting .profile__form input[type=text]{
+		min-width: 280px;
+		    width: 100%;
+	}
+	.profile__container .profile_tabs{
+		float: none;
+		min-height: 120px;
+		width: 100%;
+		&>div{
+			float: left;
+			width: 33.333%;
+			
+		}
+	}
+	.profile__container .profile_page{
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__title{
+		margin-bottom: 5px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__btn {
+		left: 220px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__level{
+		bottom: 65px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__btn{
+		left: 220px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__level{
+		bottom: 65px;
+	}
+	.exercises{
+		margin-top: 60px;
+	}
+	.teachers{
+		margin-top: 60px;
+		&__search{
+			.search{
+				margin-bottom: 25px;
+				float: none;
+				width: 100%;
+				input{
+					width: 100%;
+				}
+			}
+			.select{
+				float: none;
+				justify-content: center;
+				span{
+					font-size: 12px;
+				}
+			}
+		}
+		.teachers__items{
+			padding-left: 0;
+			text-align: center;
+			
+			.teacherItem{
+				margin-top: 140px;
+				&__foto{
+					top: -120px;
+					left: 50%;
+				}
+				&_body{
+					padding: 135px 20px 40px 20px;
+						.teacherItem__header{
+						.teacherItem_name{
+							display: block;
+							border: none;
+							padding-right: 0;
+							.rating{
+								display: block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+					.teacherItem__btns{
+						padding-left: 0;
+						position: static;
+						margin-top: 20px;
+						.btn_teacherItem{
+							float: none;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	#menuToggle{
+		display: block;
+	}
+	.header{
+		&__logo{
+			margin-left: 74px;
+//			width: 100px;
+		}
+		&__menu{
+			display: none;
+		}
+	}
+	.users__foto{
+		display: none;
+	}
+	.footer{
+		&__logo{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__menu{
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__contacts{
+			width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			order: 3;
+			margin-bottom: 10px;
+			.phone{
+				margin: 0;
+				display: block;
+				
+			}
+		}
+		&__social{
+			width: 100%;
+
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		&__copy{
+			text-align: center;
+			order: 5;
+//			margin: 0 auto;
+			width: 100%;
+		}
+	}
+}
+@include breakpoint(phablet){
+	.profile__container .profile_tabs{
+		float: none;
+		min-height: 120px;
+		width: 100%;
+		&>div{
+			float: left;
+			width: 150px;
+		
+		}
+	}
+	.profile__container .profile_page{
+		float: none;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	.teachers{
+		&__search{
+			.search{
+				margin-bottom: 25px;
+				float: none;
+				width: 100%;
+				input{
+					width: 100%;
+				}
+			}
+			.select{
+				float: none;
+				justify-content: center;
+			}
+		}
+		.teachers__items{
+			padding-left: 0;
+			text-align: center;
+			
+			.teacherItem{
+				margin-top: 140px;
+				&__foto{
+					top: -120px;
+					left: 50%;
+				}
+				&_body{
+					padding: 135px 20px 40px 20px;
+					.teacherItem__header{
+						.teacherItem_name{
+							display: block;
+							border: none;
+							padding-right: 0;
+							.rating{
+								display: block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+					.teacherItem__btns{
+						padding-left: 0;
+						position: static;
+						margin-top: 20px;
+						.btn_teacherItem{
+							float: none;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	#menuToggle{
+		display: block;
+	}
+	
+	.header{
+		&__menu{
+			margin-left: -10px;
+			display: none;
+		}
+		&__logo{
+			margin-left: 74px;
+		
+		}
+	}
+	.users__foto{
+		display: none;
+	}
+	.footer{
+		&__logo{
+			width: 50%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__menu{
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__contacts{
+			width: 50%;
+			text-align: center;
+			margin: 0 auto;
+			order: 0;
+			margin-bottom: 10px;
+			.phone{
+				margin: 0;
+				display: block;
+			}
+		}
+		&__social{
+			width: 50%;
+
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__copy{
+			text-align: center;
+			order: 5;
+
+			width: 100%;
+		}
+	}
+}
+@include breakpoint(tablet){
+	.profile__container .profile_tabs{
+		float: left;
+		min-height: 810px;
+		width: 16.6%;
+		&>div{
+			float: none;
+			width: 100%;
+			
+		}
+	}
+	.profile__container .profile_page{
+		float: left;
+		
+	}
+	.teachers{
+		&__search{
+			.search{
+				margin-bottom: 0px;
+				float: left;
+				width: 50%;
+				input{
+					width: 60%;
+				}
+			}
+			.select{
+				float: right;
+				justify-content: center;
+			}
+		}
+		.teachers__items{
+			padding-left: 100px;
+			text-align: left;
+			
+			.teacherItem{
+				margin-top: 0px;
+				&__foto{
+					top: 0px;
+					left: 0;
+				}
+				&_body{
+					padding: 10px 20px 75px 180px;
+						.teacherItem__header{
+						.teacherItem_name{
+							display: inline-block;
+							padding-right: 20px;
+							border-right: 1px solid #c6c5c5;
+							.rating{
+								display: inline-block;
+							}
+						}
+						.teacherItem_experience{
+							margin-left: 0;
+						}
+					}
+				}
+				.teacherItem__btns{
+						padding-left: 195px;
+						position: absolute;
+						.btn_teacherItem{
+							float: right;
+							margin-top: 0px;
+						}
+					}
+			}
+		}
+	}
+	#menuToggle{
+		display: none;
+	}
+
+	.header{
+		&__menu{
+			margin-left: -10px;
+			display: block;
+			
+		}
+		&__logo{
+			margin-left:0px;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.users__foto{
+		display: none;
+	}
+	.footer{
+		&__logo{
+			width: auto;
+			text-align: center;
+		}
+		&__menu{
+			max-width: 200px;
+			margin-left: 131px;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		&__contacts{
+			width: auto;
+			text-align: center;
+			margin: 0 auto;
+			order: 0;
+			margin-bottom: 10px;
+			.phone{
+				margin: 0;
+				display: block;
+			}
+		}
+		&__social{
+			width: auto;
+			text-align: center;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+		&__copy{
+			text-align: center;
+			order: 5;
+			width: 100%;
+		}
+	}
+	
+}

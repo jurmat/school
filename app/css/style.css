@@ -2310,3 +2310,334 @@ body {
     display: block;
     content: "";
     clear: both; } }
+
+@media (max-width: 37.5em) {
+  .profile__container .profile_page .page_massege {
+    padding: 0 10px; }
+  .profile__container .profile_page .page_password input[type=text] {
+    min-width: 282px;
+    width: 100%; }
+  .profile__container .profile_page .page_password .page_password_title {
+    max-width: 100%;
+    margin-top: 30px; }
+  .profile__container .profile_page .page_setting .profile__avatar {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-width: 290px;
+    margin-top: 30px; }
+  .profile__container .profile_page .page_setting .profile__form .form-date {
+    width: 100%; }
+  .profile__container .profile_page .page_setting .profile__form .form-contact {
+    width: 100%; }
+  .profile__container .profile_page .page_setting .profile__form .form-name {
+    width: 100%; }
+  .profile__container .profile_page .page_setting .profile__form input[type=text] {
+    min-width: 280px;
+    width: 100%; }
+  .profile__container .profile_tabs {
+    float: none;
+    min-height: 120px;
+    width: 100%; }
+    .profile__container .profile_tabs > div {
+      float: left;
+      width: 33.333%; }
+  .profile__container .profile_page {
+    float: none;
+    padding: 0;
+    width: 100%; }
+  .exercises__items .exercises-item_right__body .exercises-item__title {
+    margin-bottom: 5px; }
+  .exercises__items .exercises-item_left__body .exercises-item__btn {
+    left: 220px; }
+  .exercises__items .exercises-item_left__body .exercises-item__level {
+    bottom: 65px; }
+  .exercises__items .exercises-item_right__body .exercises-item__btn {
+    left: 220px; }
+  .exercises__items .exercises-item_right__body .exercises-item__level {
+    bottom: 65px; }
+  .exercises {
+    margin-top: 60px; }
+  .teachers {
+    margin-top: 60px; }
+    .teachers__search .search {
+      margin-bottom: 25px;
+      float: none;
+      width: 100%; }
+      .teachers__search .search input {
+        width: 100%; }
+    .teachers__search .select {
+      float: none;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .teachers__search .select span {
+        font-size: 12px; }
+    .teachers .teachers__items {
+      padding-left: 0;
+      text-align: center; }
+      .teachers .teachers__items .teacherItem {
+        margin-top: 140px; }
+        .teachers .teachers__items .teacherItem__foto {
+          top: -120px;
+          left: 50%; }
+        .teachers .teachers__items .teacherItem_body {
+          padding: 135px 20px 40px 20px; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name {
+            display: block;
+            border: none;
+            padding-right: 0; }
+            .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name .rating {
+              display: block; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_experience {
+            margin-left: 0; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__btns {
+            padding-left: 0;
+            position: static;
+            margin-top: 20px; }
+            .teachers .teachers__items .teacherItem_body .teacherItem__btns .btn_teacherItem {
+              float: none;
+              margin-top: 20px; }
+  #menuToggle {
+    display: block; }
+  .header__logo {
+    margin-left: 74px; }
+  .header__menu {
+    display: none; }
+  .users__foto {
+    display: none; }
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__menu {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__contacts {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -moz-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin-bottom: 10px; }
+    .footer__contacts .phone {
+      margin: 0;
+      display: block; }
+  .footer__social {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center; }
+  .footer__copy {
+    text-align: center;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -moz-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%; } }
+
+@media (min-width: 37.5em) {
+  .profile__container .profile_tabs {
+    float: none;
+    min-height: 120px;
+    width: 100%; }
+    .profile__container .profile_tabs > div {
+      float: left;
+      width: 150px; }
+  .profile__container .profile_page {
+    float: none; }
+  .teachers__search .search {
+    margin-bottom: 25px;
+    float: none;
+    width: 100%; }
+    .teachers__search .search input {
+      width: 100%; }
+  .teachers__search .select {
+    float: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .teachers .teachers__items {
+    padding-left: 0;
+    text-align: center; }
+    .teachers .teachers__items .teacherItem {
+      margin-top: 140px; }
+      .teachers .teachers__items .teacherItem__foto {
+        top: -120px;
+        left: 50%; }
+      .teachers .teachers__items .teacherItem_body {
+        padding: 135px 20px 40px 20px; }
+        .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name {
+          display: block;
+          border: none;
+          padding-right: 0; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name .rating {
+            display: block; }
+        .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_experience {
+          margin-left: 0; }
+        .teachers .teachers__items .teacherItem_body .teacherItem__btns {
+          padding-left: 0;
+          position: static;
+          margin-top: 20px; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__btns .btn_teacherItem {
+            float: none;
+            margin-top: 20px; }
+  #menuToggle {
+    display: block; }
+  .header__menu {
+    margin-left: -10px;
+    display: none; }
+  .header__logo {
+    margin-left: 74px; }
+  .users__foto {
+    display: none; }
+  .footer__logo {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__menu {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__contacts {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-bottom: 10px; }
+    .footer__contacts .phone {
+      margin: 0;
+      display: block; }
+  .footer__social {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__copy {
+    text-align: center;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -moz-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%; } }
+
+@media (min-width: 54em) {
+  .profile__container .profile_tabs {
+    float: left;
+    min-height: 810px;
+    width: 16.6%; }
+    .profile__container .profile_tabs > div {
+      float: none;
+      width: 100%; }
+  .profile__container .profile_page {
+    float: left; }
+  .teachers__search .search {
+    margin-bottom: 0px;
+    float: left;
+    width: 50%; }
+    .teachers__search .search input {
+      width: 60%; }
+  .teachers__search .select {
+    float: right;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .teachers .teachers__items {
+    padding-left: 100px;
+    text-align: left; }
+    .teachers .teachers__items .teacherItem {
+      margin-top: 0px; }
+      .teachers .teachers__items .teacherItem__foto {
+        top: 0px;
+        left: 0; }
+      .teachers .teachers__items .teacherItem_body {
+        padding: 10px 20px 75px 180px; }
+        .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name {
+          display: inline-block;
+          padding-right: 20px;
+          border-right: 1px solid #c6c5c5; }
+          .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_name .rating {
+            display: inline-block; }
+        .teachers .teachers__items .teacherItem_body .teacherItem__header .teacherItem_experience {
+          margin-left: 0; }
+      .teachers .teachers__items .teacherItem .teacherItem__btns {
+        padding-left: 195px;
+        position: absolute; }
+        .teachers .teachers__items .teacherItem .teacherItem__btns .btn_teacherItem {
+          float: right;
+          margin-top: 0px; }
+  #menuToggle {
+    display: none; }
+  .header__menu {
+    margin-left: -10px;
+    display: block; }
+  .header__logo {
+    margin-left: 0px; }
+    .header__logo:before {
+      display: none; }
+  .users__foto {
+    display: none; }
+  .footer__logo {
+    width: auto;
+    text-align: center; }
+  .footer__menu {
+    max-width: 200px;
+    margin-left: 131px;
+    text-align: center;
+    margin-bottom: 10px; }
+  .footer__contacts {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-bottom: 10px; }
+    .footer__contacts .phone {
+      margin: 0;
+      display: block; }
+  .footer__social {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px; }
+  .footer__copy {
+    text-align: center;
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+    -moz-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 100%; } }
