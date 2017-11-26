@@ -11,6 +11,7 @@
 	&__container{
 		min-height: 810px;
 		background-color: #fff;
+		
 		.profile_tabs{
 			width: 16.6%;
 			background-color: #e8e8e8;
@@ -203,6 +204,7 @@
 						min-width: 250px;
 						text-align: right;
 						margin-top: 10px;
+						padding-bottom: 20px;
 						input{
 							width: 200px;
 							background-color: #0580fb;
