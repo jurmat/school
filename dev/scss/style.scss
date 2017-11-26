@@ -1761,6 +1761,92 @@ body{
   }
 }
 }
+@media (max-width: 420px){
+	.profile__container .profile_page .page_massege #form-Notification .check_row{
+		display: block;
+		p{
+			display: block;
+		}
+		.check{
+			float: none;
+		}
+	}
+	.header{
+		#menuToggle{
+			top: 7px;
+			left: 14px;
+		}
+		&__logo{
+			margin-left: 60px!important;
+			width: 95px;
+			&:before{
+				
+				height: 58px;
+				
+			}
+		}
+		&__menu{
+			display: none;
+		}
+		.users__name{
+			
+			span{
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 475px){
+	.exercises__items .exercises-item_left__body{
+		padding-top: 120px;
+		text-align: center;
+	}
+	.exercises__items .exercises-item_right__body{
+		text-align: center;
+		padding-top: 120px;
+	}
+	.exercises__items .exercises-item_left{
+		padding-left: 0;
+		margin-top: 100px;
+	}
+	.exercises__items .exercises-item_right{
+		padding-left: 0;
+		margin-top: 100px;
+	}
+	
+	.exercises__items .exercises-item_left__foto{
+		position: absolute;
+		top: -80px;
+		left: 50%;
+	}
+	.exercises__items .exercises-item_right__foto{
+		position: absolute;
+		top: -80px;
+		left: 50%;
+	}
+	
+	.exercises__items .exercises-item_left__body .exercises-item__btn {
+		left: 220px;
+		position: static;
+		margin-top: 20px;
+	}
+	.exercises__items .exercises-item_left__body .exercises-item__level{
+		bottom: 65px;
+		position: static;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__btn{
+		left: 220px;
+		position: static;
+		margin-top: 20px;
+	}
+	.exercises__items .exercises-item_right__body .exercises-item__level{
+		bottom: 65px;
+		position: static;
+	}
+	.paginations a{
+		margin-left: 0;
+	}
+}
 @include breakpoint(mobileonly){
 	.profile__container .profile_page .page_massege {
 		padding: 0 10px;
@@ -2194,6 +2280,96 @@ body{
 			text-align: center;
 			order: 5;
 			width: 100%;
+		}
+	}
+	
+}
+@include breakpoint(laptop){
+	#menuToggle{
+		display: none;
+	}
+	.header{
+		&__menu{
+			margin-left: 47px;
+			
+		}
+		&__logo{
+				margin-left:0px;
+				&:before{
+					display: none;
+				}
+			}
+	}
+	.users__foto{
+		display: block;
+	}
+	.footer{
+		&__logo{
+			min-width: 155px;
+//			text-align: center;
+		}
+		&__menu{
+			max-width: 200px;
+			margin-left: 131px;
+			text-align: left;
+			margin-bottom: 0px;
+		}
+		&__contacts{
+			margin-left: 107px;
+			min-width: 200px;
+			margin-bottom: 0px;
+			.phone{
+				margin: 0;
+				display: block;
+				margin-right: 40px;
+			}
+		}
+		&__social{
+			width: auto;
+
+			text-align:right;
+			margin-bottom: 0px;
+		}
+		&__copy{
+			text-align: center;
+			order: 5;
+
+			width: auto;
+		}
+	}
+}
+
+@include breakpoint(desktop){
+	.footer{
+		&__logo{
+			min-width: 155px;
+//			text-align: center;
+		}
+		&__menu{
+			max-width: 200px;
+			margin-left: 131px;
+			text-align: left;
+		}
+		&__contacts{
+			margin-left: 6%;
+			min-width: 200px;
+			.phone{
+				margin: 0;
+				display: inline-block;
+				margin-right: 40px;
+			}
+		}
+		&__social{
+			width: auto;
+
+			text-align:right;
+			
+		}
+		&__copy{
+			text-align: center;
+			order: 5;
+
+			width: auto;
 		}
 	}
 	
