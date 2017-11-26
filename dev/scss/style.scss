@@ -2,6 +2,7 @@
 @import '_grid';
 @import '_reset';
 @import 'exercises';
+@import 'profile';
 @mixin clearfix() {
   &::after {
     display: block;

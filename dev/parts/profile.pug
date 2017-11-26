@@ -1,0 +1,108 @@
+.profile
+	.wrapper
+		.profile__title
+			span Ваш профайл
+		.profile__container.clearfix
+			.profile_tabs
+				.tab.tab_setting.tab-active(data-collection="1" data-trigger="0")
+					.tabs__icon_set
+					span Настройки
+				.tab.tab_password(data-collection="1" data-trigger="1")
+					.tabs__icon_pass
+					span Пароль
+				.tab.tab_massege(data-collection="1" data-trigger="2")
+					.tabs__icon_mas
+					span Уведомления
+			.profile_page
+				.page_setting.active(data-collection="1" data-target="0")
+					
+					.profile__form
+						form#form-profil(actions="/" method="POST" )
+							.profile__avatar
+								.ava_foto
+									img(src="img/teacher_foto.png", alt="")
+								.ava_title
+									p Аватар: 
+									span PNG, JPG, GIF
+									.ava_upLoad
+										input(type="file" accept="image/x-png,image/gif,image/jpeg" name="file" id="file" class="inputfile" )
+										label(for="file")
+											|Изменить 
+											i.fa.fa-long-arrow-right(aria-hidden="true")
+							.form-name
+								p Ваше имя:
+								input(type="text" name="name" placeholder="")
+								p Фамилмя:
+								input(type="text" name="lastname" placeholder="")
+							.form-contact
+								p E-mail:
+								input(type="text" name="Email" placeholder="")
+								p Телефон:
+								input(type="text" name="phone" placeholder="")
+							.form-date
+								p Дата рождения:
+								input(type="text" name="date"  class='datepicker-here')
+								
+								p skype:
+								input(type="text" name="skype" placeholder="")
+							.form-check
+								p Ваш пол:
+								input(type="radio"  value="men" id="men" name="sex")
+								label(for="men")
+									span Мужской
+								input(type="radio"  value="woman" id="woman" name="sex")
+								label(for="woman")
+									span Женский
+							.form-text
+								p Любимая цитата:
+								textarea(name="")
+								
+							.form-btn
+								input(type="submit" value="Сохранить изменения") 
+								
+				.page_password(data-collection="1" data-target="1")
+					form#form-password(action="#" method="GET")
+						.page_password_title
+							p Смена пароля
+						p Текущий пароль:
+							input(type="text" required name="Current-password" placeholder="")
+						p Новый пароль:
+							input(type="text" required name="New Password" placeholder="")
+						p Подтвердите новый пароль:
+							input(type="text" required name="Confirm-password" placeholder="")
+						.form-btn
+							input(type="submit" value="Сохранить изменения") 
+				.page_massege(data-collection="1" data-target="2")
+					form#form-Notification( action="" method="POST")
+						.page_Notification_title
+							p Я хочу получать уведомления
+						.check_row
+							p Навости сайта:
+							.check
+								label(for="checkbox-sms-1")
+									input(type="checkbox" class="checkbox" id="checkbox-sms-1" name="news-sms")
+									span SMS
+								label(for="checkbox-email-1")
+									input(type="checkbox" class="checkbox" id="checkbox-email-1" name="news-email")
+									span E-mail
+						.check_row
+							p новые рекомендации:
+							.check
+								label(for="checkbox-sms-2")
+									input(type="checkbox" class="checkbox" id="checkbox-sms-2" name="recommendations-sms")
+									span SMS
+								label(for="checkbox-email-2")
+									input(type="checkbox" class="checkbox" id="checkbox-email-2" name="recommendations-email")
+									span E-mail
+						.check_row
+							p Начало урока:
+							.check
+								label(for="checkbox-sms-3")
+									input(type="checkbox" class="checkbox" id="checkbox-sms-3" name="LessonStart-sms")
+									span SMS
+								label(for="checkbox-email-3")
+									input(type="checkbox" class="checkbox" id="checkbox-email-3" name="LessonStart-email")
+									span E-mail
+						.form-btn
+							input(type="submit" value="Сохранить изменения") 
+					
