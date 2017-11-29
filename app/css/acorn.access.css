@@ -15,12 +15,16 @@
  *
  */
  
+ .ui-widget.ui-widget-content {
+    border: 0!important;
+}
+ 
 /* Start of access theme */
 .acorn-player.access {
 	float: left;
 	position: relative;
 	overflow: hidden;
-	width: 100%;
+	width: 60%;
 	border: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,8 +42,8 @@
 	float: left;
 	background: #faf8f8;
 	clear: both;
+	padding: 0 5px;
 	width: 100%;
-	padding-top: 15px;
 		1px solid #d1d1d1
 		color: #faf8f8;
 	background-position: bottom left;
@@ -64,7 +68,7 @@
 .acorn-player.access .acorn-play-button {
 	float: left;
 	display: block;
-	width: 47px;
+	width: 7%;
 	background: #faf8f8;
 	border: 0px;
 	background-position: 5px center, top left;
@@ -78,10 +82,10 @@
 .acorn-player.access .acorn-seek-slider {
 	float: left;
 	display: block;
-	width: 50%;
+	width: 65%;
 	height: 5px;
 	margin: 25px 15px;
-	background: #7289A8;
+	background: #fff;
 	z-index: 2;
 }
 .acorn-player.access .acorn-seek-slider .ui-slider-handle {
@@ -103,11 +107,9 @@
 	background: #888;
 }
 .acorn-player.access .acorn-seek-slider .ui-slider-range {	
-	background: #0750B2;	
+	background: #0580fb;	
 }
-.acorn-player.access .acorn-buffer {	
-	background: #8E9DAF !important;	
-}
+
 .acorn-player.access .acorn-seek-slider .ui-state-focus, .acorn-player.access .acorn-seek-slider .ui-slider-handle.ui-state-hover {
 	background: #0750B2 !important;
 	
@@ -118,21 +120,21 @@
 /* Timer */
 .acorn-player.access .acorn-timer {
 	position: absolute;
-	top: 25px;
-	left: 52%;
+	top: 10px;
+	right: 26%;
 	color: #000;
 	font-size: 13px;
 }
 /* Volume Container */
 .acorn-player.access .acorn-volume-box {
 	float: left;
+	width: 15%;
 	overflow: hidden;
-	padding-right: 10px;
 }
 /* Volume Button */
 .acorn-player.access .acorn-volume-button {
 	    float: left;
-    width: 40px;
+    width: 30%;
     border: 0;
     background-position: 5px center, top left;
     background-repeat: no-repeat, repeat-x;
@@ -146,20 +148,14 @@
 .acorn-player.access .acorn-volume-slider {
 	float: left;
 	height: 5px;
-	width: 70px;
-	margin-left: 10px;
-	margin-top: 15px;		
-	border: 1px solid #333;	
-	
-	background: #111;
-	
-	-moz-box-shadow: 0px 1px 1px #777;
-	-webkit-box-shadow: 0px 1px 1px #777;
-	box-shadow: 0px 1px 1px #777;
+	width: 70%;
+	    margin: 25px 0;		
+	background: #ddd;
 }
 .acorn-player.access .acorn-volume-slider .ui-slider-handle {
 	width: 5px;
 	height: 15px;	
+	display: none;
 	margin-top: -5px;
 	margin-left: -5px;
 	
@@ -174,12 +170,16 @@
 	background: #fff !important;
 }
 .acorn-player.access .acorn-volume-slider .ui-slider-range {	
-	background: #636F7C;
+	background: #0580fb;
 }
 /* Fullscreen Button */
 .acorn-player.access .acorn-fullscreen-button {
 	float: right;
-	background-image: url(access-fullscreen.png), url(button-background-dark.png);
+	width: 5%;
+	padding: 17px;
+	background-position: 5px center, top left;
+	background-image: url(../img/full.png);
+	    background-repeat: no-repeat, repeat-x;
 	border: 0px;
 }
 /* Fullscreen Mode */
@@ -330,4 +330,38 @@
 	-moz-box-shadow: 0px 1px 1px #fff;
 	-webkit-box-shadow: 0px 1px 1px #fff;
 	box-shadow: 0px 1px 1px #fff;
+}
+ .ui-widget.ui-widget-content {
+    border: 0;
+}
+.ui-corner-all{
+	border-radius: 0px!important;
+}
+@media (max-width: 37.5em){
+	.acorn-player.access .acorn-play-button{
+		width: 14%;
+	}
+	.acorn-player.access .acorn-seek-slider{
+		width: 40%;
+	}
+	.acorn-player.access .acorn-volume-box{
+		width: 25%;
+	}
+	.acorn-player.access .acorn-volume-button{
+		width: 40%;
+	}
+	.acorn-player.access .acorn-volume-slider{
+		width: 60%;
+	}
+	.acorn-player.access .acorn-fullscreen-button{
+		width: 6%;
+	}
+	.acorn-player.access .acorn-timer{
+		right: 44%;
+	}
+}
+@media (max-width: 64em){
+	.acorn-player.access{
+		width: 100%;
+	}
 }

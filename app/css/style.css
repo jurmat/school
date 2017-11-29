@@ -2765,3 +2765,6 @@ body {
     -ms-flex-order: 5;
     order: 5;
     width: auto; } }
+
+.ui-widget.ui-widget-content {
+  border: 0; }
