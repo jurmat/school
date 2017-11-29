@@ -149,4 +149,14 @@ $('[data-trigger]').click(function(){
   d=new Date()
   time_zone=d.getTimezoneOffset()
   console.log(time_zone);
+
+
+  if(window.webshims) {
+      webshims.polyfill('mediaelement');
+    }
+    jQuery(function() {
+      // demo1
+      jQuery('#demo1, #demo1-audio').acornMediaPlayer();
+    });
+
 });
