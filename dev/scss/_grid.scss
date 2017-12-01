@@ -11,6 +11,12 @@
 //  z-index:2;
   padding: 0 10px;
 }
+.col-m-5x{
+  @include breakpoint(mobileonly){
+  float:left;
+  width:20%;
+  }
+}
 .col-m-3x{
 	@include breakpoint(mobileonly){
   float:left;
@@ -35,6 +41,12 @@
   width:33.3%;
   }
 }
+.col-f-35x{
+    @include breakpoint(phablet){
+  float:left;
+  width:30%;
+  }
+}
 .col-f-4x{
 	  @include breakpoint(phablet){
   float:left;
@@ -47,10 +59,22 @@
   width:33.3%;
   }
 }
+.col-f-5x{
+    @include breakpoint(phablet){
+  float:left;
+  width:20%;
+  }
+}
 .col-t-3x{
   @include breakpoint(tablet){
   float:left;
   width:33.3%;
+  }
+}
+.col-t-2x{
+  @include breakpoint(tablet){
+  float:left;
+  width:55%;
   }
 }
 .col-t-4x{
