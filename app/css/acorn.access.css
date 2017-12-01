@@ -67,7 +67,7 @@
 .acorn-player.access .acorn-play-button {
 	float: left;
 	display: block;
-	width: 7%;
+	width: 9%;
 	background: #faf8f8;
 	border: 0px;
 	background-position: 5px center, top left;
@@ -81,7 +81,7 @@
 .acorn-player.access .acorn-seek-slider {
 	float: left;
 	display: block;
-	width: 65%;
+	width: 60%;
 	height: 5px;
 	margin: 25px 15px;
 	background: #fff;
@@ -120,7 +120,7 @@
 .acorn-player.access .acorn-timer {
 	position: absolute;
 	top: 10px;
-	right: 26%;
+	right: 29%;
 	color: #000;
 	font-size: 13px;
 }
