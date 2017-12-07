@@ -2514,10 +2514,10 @@ body{
 	font-size: 16px;
 	font-weight: bold;
 	padding: 17px 0;
-	 @media(min-width: 64em){
-				 text-align: right;
-				 font-size: 30px;
-			}
+	@media(min-width: 64em){
+		text-align: right;
+		font-size: 30px;
+	}
 }
 .footer-non{
 	.footer{
@@ -2527,13 +2527,13 @@ body{
 .like-cont{
 	span{
 	display: inline-block;
-    vertical-align: middle;
-    margin-left: 30px;
-       margin-top: -85px;
-    font-size: 22px;
-    font-weight: bold;
-    @media(max-width: 64em){
-    	display: none;
-    }
+	vertical-align: middle;
+	margin-left: 30px;
+	margin-top: -85px;
+	font-size: 22px;
+	font-weight: bold;
+		@media(max-width: 64em){
+			display: none;
+		}
 	}
 }
